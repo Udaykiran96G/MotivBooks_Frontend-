@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotivBooks — Read. Grow. Become.</title>
+    <meta name="description" content="MotivBooks - Your personal reading companion. Discover motivational books, track your reading progress, and grow with AI-powered insights.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar (shown when logged in) -->
+        <nav id="sidebar" class="sidebar hidden">
+            <div class="sidebar-brand">
+                <div class="brand-icon">
+                    <span class="material-icons-round">auto_stories</span>
+                </div>
+                <h1 class="brand-name">MotivBooks</h1>
+            </div>
+            <div class="sidebar-nav">
+                <a href="#/dashboard" class="nav-item" data-route="dashboard">
+                    <span class="material-icons-round">dashboard</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#/library" class="nav-item" data-route="library">
+                    <span class="material-icons-round">local_library</span>
+                    <span>Library</span>
+                </a>
+                <a href="#/progress" class="nav-item" data-route="progress">
+                    <span class="material-icons-round">trending_up</span>
+                    <span>Progress</span>
+                </a>
+                <a href="#/challenges" class="nav-item" data-route="challenges">
+                    <span class="material-icons-round">emoji_events</span>
+                    <span>Challenges</span>
+                </a>
+                <a href="#/ai-coach" class="nav-item" data-route="ai-coach">
+                    <span class="material-icons-round">psychology</span>
+                    <span>AI Coach</span>
+                </a>
+                <a href="#/journal" class="nav-item" data-route="journal">
+                    <span class="material-icons-round">edit_note</span>
+                    <span>Journal</span>
+                </a>
+            </div>
+            <div class="sidebar-footer">
+                <a href="#/profile" class="nav-item" data-route="profile">
+                    <span class="material-icons-round">person</span>
+                    <span>Profile</span>
+                </a>
+                <a href="#/settings" class="nav-item" data-route="settings">
+                    <span class="material-icons-round">settings</span>
+                    <span>Settings</span>
+                </a>
+                <button id="logout-btn" class="nav-item logout-btn">
+                    <span class="material-icons-round">logout</span>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content">
+            <div id="page-container"></div>
+        </main>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="router.js"></script>
+    <!-- Pages -->
+    <script src="pages/welcome.js"></script>
+    <script src="pages/login.js"></script>
+    <script src="pages/register.js"></script>
+    <script src="pages/admin-login.js"></script>
+    <script src="pages/forgot-password.js"></script>
+    <script src="pages/dashboard.js"></script>
+    <script src="pages/library.js"></script>
+    <script src="pages/reader.js"></script>
+    <script src="pages/progress.js"></script>
+    <script src="pages/challenges.js"></script>
+    <script src="pages/profile.js"></script>
+    <script src="pages/settings.js"></script>
+    <script src="pages/ai-coach.js"></script>
+    <script src="pages/journal.js"></script>
+    <script src="pages/daily-boost.js"></script>
+    <script src="pages/badges.js"></script>
+    <script src="pages/set-goal.js"></script>
+    <script src="pages/change-password.js"></script>
+    <script src="pages/admin.js"></script>
+    <script src="pages/admin-chapters.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

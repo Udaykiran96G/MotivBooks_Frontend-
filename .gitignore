@@ -1,0 +1,63 @@
+# === Android Build Artifacts ===
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.dex
+*.class
+*.ap_
+*.hprof
+
+# === Build Logs & Debug Files ===
+*.log
+*.txt
+!requirements.txt
+build_*.txt
+build_*.log
+gradle_output*.txt
+compile_log*.txt
+error*.txt
+errors*.txt
+stderr.txt
+stdout.txt
+output.txt
+raw_err*.log
+final_*.txt
+file_list*.txt
+tmp_*.txt
+dependencies.txt
+motiv-books-splash.html
+
+# === Kotlin ===
+.kotlin/
+
+# === Virtual Environments ===
+.venv/
+venv/
+
+# === Backend (separate repo) ===
+backend/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Sensitive Files ===
+.env
+local.properties
+push_backend.bat
+push_frontend.bat
